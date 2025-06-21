@@ -14,8 +14,9 @@
     --font-regular-weight: 400;
     --font-regular-size: 15px;
     --font-bold-family: 'Outfit', sans-serif;
-    --font-regular-weight: 700;
-    --font-regular-size: 22px;
+    --font-bold-weight: 700;
+    --font-bold-size: 22px;
+    --bradius: 1rem;
 }
 
 .qrcode-body {
@@ -29,17 +30,42 @@
 
 .qrcode-container {
     background-color: var(--white);
-    width: 19.5%;
+    width: 16%;
     padding: 1.5rem;
+    margin: 1rem;
+    border-radius: var(--bradius);
 }
 
 .qrcode-component {
     background-color: var(--blue600);
+    border-radius: var(--bradius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 17rem;
 }
 
 .qrcode-component img {
-    height: 15rem;
+    height: 12rem;
     width: auto;
+}
+
+.qr-content h1,
+p {
+    margin: 0.5rem;
+    font-family: var(--font-bold-family);
+}
+
+.heading h1 {
+    color: var(--slate900);
+    font-weight: var(--font-bold-weight);
+    font-size: var(--font-bold-size);
+}
+
+.paragraph p {
+    color: var(--slate500);
+    font-size: var(--font-regular-size);
+    font-weight: var(--font-regular-weight);
 }
 
 .attribution {
